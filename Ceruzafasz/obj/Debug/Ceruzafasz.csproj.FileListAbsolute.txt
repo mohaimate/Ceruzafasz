@@ -7,3 +7,13 @@ c:\users\gabi\documents\visual studio 2017\Projects\Ceruzafasz\Ceruzafasz\bin\De
 c:\users\gabi\documents\visual studio 2017\Projects\Ceruzafasz\Ceruzafasz\bin\Debug\Ceruzafasz.pdb
 c:\users\gabi\documents\visual studio 2017\Projects\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.exe
 c:\users\gabi\documents\visual studio 2017\Projects\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.pdb
+C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\bin\Debug\Ceruzafasz.exe.config
+C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\bin\Debug\Ceruzafasz.exe
+C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\bin\Debug\Ceruzafasz.pdb
+C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.csprojResolveAssemblyReference.cache
+C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.Form1.resources
+C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.Properties.Resources.resources
+C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.csproj.GenerateResource.Cache
+C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.csproj.CoreCompileInputs.cache
+C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.exe
+C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.pdb

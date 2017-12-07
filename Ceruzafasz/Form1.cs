@@ -18,31 +18,34 @@ namespace Ceruzafasz
             InitializeComponent();
         }
 
-        private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        /*private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             //Anything here is triggered when data is received from the port (---serialPort1.ReadLine()--- is the call to read the received message)
-            label1.Text = serialPort1.ReadLine();
+            //label1.Text = serialPort1.ReadLine();
         }
-
+        */
         private void button1_Click(object sender, EventArgs e)
         {
             //When the button is pressed the code gets executed (----serialPort1.Write("")--- is the call to send a message to Arduino
-            serialPort1.Write("arduino code goes here");
-        }
+            //serialPort1.Write("arduino code goes here");
+            SerialPort port = new SerialPort("COM3", 9600, Parity.None, 8, StopBits.One);
+            port.Open();
+            port.Write("kurva élet");
+        } // igen oki megnézem, de akkor bedugva hagyom usbn arduit
+
 
         private void textBox1_KeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)13) //check if Enter is pressed
             {
-                serialPort1.Write(textBox1.Text); //send the console textbox command to the port
+                //serialPort1.Write(textBox1.Text); //send the console textbox command to the port
             }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             //connection is set up and the port to the connection is opened upon program start
-            setupConn();
-            openPort();
+            //setupConn();
         }
 
         private void textBox1_Click(object sender, System.EventArgs e)
@@ -50,30 +53,21 @@ namespace Ceruzafasz
             if (textBox1.Text.Equals("Press ENTER to send")) textBox1.Text = "";
         }
 
-        public void openPort()
-        {
-            if (!serialPort1.IsOpen) serialPort1.Open();
-        }
+       
 
-        public void closePort()
+       /* public void setupConn()
         {
-            if (serialPort1.IsOpen) serialPort1.Close();
-        }
-
-        public void setupConn()
-        {
-            serialPort1.PortName = "COM4";
+            serialPort1.PortName = "COM3";
             serialPort1.BaudRate = 9600;
-            /*serialPort1.DataBits = 8;
+            serialPort1.DataBits = 8;
             serialPort1.Parity = Parity.None;
             serialPort1.StopBits = StopBits.One;
             serialPort1.Handshake = Handshake.None;
-            serialPort1.Encoding = System.Text.Encoding.Default;*/
-        }
+            serialPort1.Encoding = System.Text.Encoding.Default;
+        }*/
 
         private void Form1_Closing(object sender, FormClosingEventArgs e)
         {
-            closePort();
         }
     }
 }
