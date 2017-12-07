@@ -20,11 +20,13 @@ namespace Ceruzafasz
 
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
+            //Anything here is triggered when data is received from the port (---serialPort1.ReadLine()--- is the call to read the received message)
             label1.Text = serialPort1.ReadLine();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //When the button is pressed the code gets executed (----serialPort1.Write("")--- is the call to send a message to Arduino
             serialPort1.Write("arduino code goes here");
         }
 
