@@ -1,0 +1,9 @@
+c:\users\gabi\documents\visual studio 2017\Projects\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.csprojResolveAssemblyReference.cache
+c:\users\gabi\documents\visual studio 2017\Projects\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.Form1.resources
+c:\users\gabi\documents\visual studio 2017\Projects\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.Properties.Resources.resources
+c:\users\gabi\documents\visual studio 2017\Projects\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.csproj.GenerateResource.Cache
+c:\users\gabi\documents\visual studio 2017\Projects\Ceruzafasz\Ceruzafasz\bin\Debug\Ceruzafasz.exe.config
+c:\users\gabi\documents\visual studio 2017\Projects\Ceruzafasz\Ceruzafasz\bin\Debug\Ceruzafasz.exe
+c:\users\gabi\documents\visual studio 2017\Projects\Ceruzafasz\Ceruzafasz\bin\Debug\Ceruzafasz.pdb
+c:\users\gabi\documents\visual studio 2017\Projects\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.exe
+c:\users\gabi\documents\visual studio 2017\Projects\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.pdb
