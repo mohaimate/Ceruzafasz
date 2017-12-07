@@ -32,14 +32,15 @@ namespace Ceruzafasz
 
         private void textBox1_KeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)13)
+            if (e.KeyChar == (char)13) //check if Enter is pressed
             {
-                serialPort1.Write(textBox1.Text);
+                serialPort1.Write(textBox1.Text); //send the console textbox command to the port
             }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //connection is set up and the port to the connection is opened upon program start
             setupConn();
             openPort();
         }
