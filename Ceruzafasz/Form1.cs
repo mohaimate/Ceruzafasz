@@ -22,8 +22,11 @@ namespace Ceruzafasz
         {
             //Anything here is triggered when data is received from the port (---serialPort1.ReadLine()--- is the call to read the received message)
             //label1.Text = serialPort1.ReadLine();
-        }
-        */
+            SerialPort port = new SerialPort("COM3", 9600, Parity.None, 8, StopBits.One);
+            port.Open();
+            label1.Text = port.ReadLine();
+        } */
+        
         private void button1_Click(object sender, EventArgs e)
         {
             //When the button is pressed the code gets executed (----serialPort1.Write("")--- is the call to send a message to Arduino
@@ -31,6 +34,7 @@ namespace Ceruzafasz
             SerialPort port = new SerialPort("COM3", 9600, Parity.None, 8, StopBits.One);
             port.Open();
             port.Write("kurva élet");
+            port.Close();
         } // igen oki megnézem, de akkor bedugva hagyom usbn arduit
 
 
