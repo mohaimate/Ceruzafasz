@@ -33,7 +33,7 @@ namespace Ceruzafasz
             //serialPort1.Write("arduino code goes here");
             SerialPort port = new SerialPort("COM3", 9600, Parity.None, 8, StopBits.One);
             port.Open();
-            port.Write("kurva élet");
+            port.Write("1");
             port.Close();
         } // igen oki megnézem, de akkor bedugva hagyom usbn arduit
 
@@ -72,6 +72,11 @@ namespace Ceruzafasz
 
         private void Form1_Closing(object sender, FormClosingEventArgs e)
         {
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
