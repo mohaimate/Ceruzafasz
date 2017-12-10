@@ -30,7 +30,9 @@ namespace Ceruzafasz
         private delegate void LineReceivedEvent(string line);
         private void LineReceived(string line)
         {
-            label1.Text = line;
+            string data = line;
+            label1.Text = line.Substring(0, line.IndexOf(".")+2);
+            label11.Text = line.Substring(line.IndexOf("k"));
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -59,10 +61,14 @@ namespace Ceruzafasz
             Connection.port.WriteLine(textBox2.Text);
             Connection.port.WriteLine("3");
             Connection.port.WriteLine(textBox3.Text);*/
-            
-            byte[] buffer = BitConverter.GetBytes(10);
-            Connection.port.Write(buffer, 0, buffer.Length);
-            
+
+            WriteByte("10");
+        }
+
+        public void WriteByte(string data)
+        {
+            byte[] bytes = Encoding.ASCII.GetBytes(data);
+            Connection.port.Write(bytes, 0, data.Length);
         }
     }
 }
