@@ -33,7 +33,7 @@ namespace Ceruzafasz
             //serialPort1.Write("arduino code goes here");
             SerialPort port = new SerialPort("COM3", 9600, Parity.None, 8, StopBits.One);
             port.Open();
-            port.Write("1");
+            port.Write(textBox1.Text);
             port.Close();
         } // igen oki megnézem, de akkor bedugva hagyom usbn arduit
 
@@ -57,18 +57,28 @@ namespace Ceruzafasz
             if (textBox1.Text.Equals("Press ENTER to send")) textBox1.Text = "";
         }
 
-       
-
-       /* public void setupConn()
+        private void textBox2_Click(object sender, System.EventArgs e)
         {
-            serialPort1.PortName = "COM3";
-            serialPort1.BaudRate = 9600;
-            serialPort1.DataBits = 8;
-            serialPort1.Parity = Parity.None;
-            serialPort1.StopBits = StopBits.One;
-            serialPort1.Handshake = Handshake.None;
-            serialPort1.Encoding = System.Text.Encoding.Default;
-        }*/
+            if (textBox1.Text.Equals("Press ENTER to send")) textBox1.Text = "";
+        }
+
+        private void textBox3_Click(object sender, System.EventArgs e)
+        {
+            if (textBox1.Text.Equals("Press ENTER to send")) textBox1.Text = "";
+        }
+
+
+
+        /* public void setupConn()
+         {
+             serialPort1.PortName = "COM3";
+             serialPort1.BaudRate = 9600;
+             serialPort1.DataBits = 8;
+             serialPort1.Parity = Parity.None;
+             serialPort1.StopBits = StopBits.One;
+             serialPort1.Handshake = Handshake.None;
+             serialPort1.Encoding = System.Text.Encoding.Default;
+         }*/
 
         private void Form1_Closing(object sender, FormClosingEventArgs e)
         {
@@ -77,6 +87,34 @@ namespace Ceruzafasz
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SerialPort port = new SerialPort("COM3", 9600, Parity.None, 8, StopBits.One);
+            port.Open();
+            port.WriteLine("1");
+            port.WriteLine(textBox1.Text);
+            port.WriteLine("2");
+            port.WriteLine(textBox2.Text);
+            port.WriteLine("3");
+            port.WriteLine(textBox3.Text);
+            port.Close();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Equals("Press ENTER to send")) textBox1.Text = "";
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Equals("Press ENTER to send")) textBox1.Text = "";
         }
     }
 }
