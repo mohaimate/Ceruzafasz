@@ -68,7 +68,7 @@ namespace Ceruzafasz
         public void WriteByte(string data)
         {
             byte[] bytes = Encoding.ASCII.GetBytes(data);
-            Connection.port.Write(bytes, 0, data.Length);
+            Connection.port.Write(bytes, 0, bytes.Length);
         }
     }
 }
