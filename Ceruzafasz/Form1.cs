@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
 
+
 namespace Ceruzafasz
 {
     public partial class Form1 : Form
@@ -16,105 +17,48 @@ namespace Ceruzafasz
         public Form1()
         {
             InitializeComponent();
+
+            Connection.port.DataReceived += port_DataReceived;
+            Connection.port.Open();
         }
 
-        /*private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        private void port_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
-            //Anything here is triggered when data is received from the port (---serialPort1.ReadLine()--- is the call to read the received message)
-            //label1.Text = serialPort1.ReadLine();
-            SerialPort port = new SerialPort("COM3", 9600, Parity.None, 8, StopBits.One);
-            port.Open();
-            label1.Text = port.ReadLine();
-        } */
-        
+            string line = Connection.port.ReadLine();
+            this.BeginInvoke(new LineReceivedEvent(LineReceived), line);
+        }
+        private delegate void LineReceivedEvent(string line);
+        private void LineReceived(string line)
+        {
+            label1.Text = line;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             //When the button is pressed the code gets executed (----serialPort1.Write("")--- is the call to send a message to Arduino
             //serialPort1.Write("arduino code goes here");
-            SerialPort port = new SerialPort("COM3", 9600, Parity.None, 8, StopBits.One);
-            port.Open();
-            port.Write(textBox1.Text);
-            port.Close();
-        } // igen oki megnézem, de akkor bedugva hagyom usbn arduit
-
-
-        private void textBox1_KeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)13) //check if Enter is pressed
-            {
-                //serialPort1.Write(textBox1.Text); //send the console textbox command to the port
-            }
+            Connection.port.Write(textBox1.Text);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //connection is set up and the port to the connection is opened upon program start
-            //setupConn();
-        }
-
-        private void textBox1_Click(object sender, System.EventArgs e)
-        {
-            if (textBox1.Text.Equals("Press ENTER to send")) textBox1.Text = "";
-        }
-
-        private void textBox2_Click(object sender, System.EventArgs e)
-        {
-            if (textBox1.Text.Equals("Press ENTER to send")) textBox1.Text = "";
-        }
-
-        private void textBox3_Click(object sender, System.EventArgs e)
-        {
-            if (textBox1.Text.Equals("Press ENTER to send")) textBox1.Text = "";
-        }
-
-
-
-        /* public void setupConn()
-         {
-             serialPort1.PortName = "COM3";
-             serialPort1.BaudRate = 9600;
-             serialPort1.DataBits = 8;
-             serialPort1.Parity = Parity.None;
-             serialPort1.StopBits = StopBits.One;
-             serialPort1.Handshake = Handshake.None;
-             serialPort1.Encoding = System.Text.Encoding.Default;
-         }*/
+    
+        }   
 
         private void Form1_Closing(object sender, FormClosingEventArgs e)
         {
+            Connection.port.Close();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            SerialPort port = new SerialPort("COM3", 9600, Parity.None, 8, StopBits.One);
-            port.Open();
-            port.WriteLine("1");
-            port.WriteLine(textBox1.Text);
-            port.WriteLine("2");
-            port.WriteLine(textBox2.Text);
-            port.WriteLine("3");
-            port.WriteLine(textBox3.Text);
-            port.Close();
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            if (textBox1.Text.Equals("Press ENTER to send")) textBox1.Text = "";
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-            if (textBox1.Text.Equals("Press ENTER to send")) textBox1.Text = "";
+            Connection.port.WriteLine("1");
+            Connection.port.WriteLine(textBox1.Text);
+            Connection.port.WriteLine("2");
+            Connection.port.WriteLine(textBox2.Text);
+            Connection.port.WriteLine("3");
+            Connection.port.WriteLine(textBox3.Text);
         }
     }
 }

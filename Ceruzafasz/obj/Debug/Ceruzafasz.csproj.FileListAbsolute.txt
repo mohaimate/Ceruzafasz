@@ -17,3 +17,13 @@ C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.csp
 C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.csproj.CoreCompileInputs.cache
 C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.exe
 C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.pdb
+C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\bin\Debug\Ceruzafasz.exe.config
+C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\bin\Debug\Ceruzafasz.exe
+C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\bin\Debug\Ceruzafasz.pdb
+C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.csprojResolveAssemblyReference.cache
+C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.Form1.resources
+C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.Properties.Resources.resources
+C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.csproj.GenerateResource.Cache
+C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.csproj.CoreCompileInputs.cache
+C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.exe
+C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.pdb
