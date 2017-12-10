@@ -31,8 +31,8 @@ namespace Ceruzafasz
         private void LineReceived(string line)
         {
             string data = line;
-            label1.Text = line.Substring(0, line.IndexOf(".")+2);
-            label11.Text = line.Substring(line.IndexOf("k"));
+            label1.Text = line.Substring(0, line.IndexOf(".")+3);
+            label11.Text = line.Substring(line.IndexOf("k")+1);
         }
 
         private void button1_Click(object sender, EventArgs e)
