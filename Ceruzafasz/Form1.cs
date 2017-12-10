@@ -65,9 +65,9 @@ namespace Ceruzafasz
             WriteByte(10);
         }
 
-            public void WriteByte(int data)
+            public void WriteByte(byte data)
             {
-                byte[] bytes = new byte[] { (byte)data };
+                byte[] bytes = new byte[] { data };
                 Connection.port.Write(bytes, 0, bytes.Length);
             }
 
