@@ -53,12 +53,16 @@ namespace Ceruzafasz
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Connection.port.WriteLine("1");
+            /*Connection.port.WriteLine("1"+textBox1.Text+"2"+textBox2.Text+"3"+textBox3.Text);
             Connection.port.WriteLine(textBox1.Text);
             Connection.port.WriteLine("2");
             Connection.port.WriteLine(textBox2.Text);
             Connection.port.WriteLine("3");
-            Connection.port.WriteLine(textBox3.Text);
+            Connection.port.WriteLine(textBox3.Text);*/
+            
+            byte[] buffer = BitConverter.GetBytes(10);
+            Connection.port.Write(buffer, 0, buffer.Length);
+            
         }
     }
 }
