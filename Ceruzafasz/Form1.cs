@@ -34,7 +34,7 @@ namespace Ceruzafasz
             if (line.StartsWith("m"))
             {
                 label15.Text = line.Substring(1, line.IndexOf("n")-1);
-                label16.Text = line.Substring(line.IndexOf("n")+1, line.IndexOf("b") - 1);
+                label16.Text = line.Substring(line.IndexOf("n")+1, line.IndexOf("b")-line.IndexOf("n")-1);
                 label17.Text = line.Substring(line.IndexOf("b")+1);
             } else
             {
