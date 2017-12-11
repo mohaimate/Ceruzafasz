@@ -62,12 +62,12 @@ namespace Ceruzafasz
             Connection.port.WriteLine("3");
             Connection.port.WriteLine(textBox3.Text);*/
 
-            WriteByte(10);
+            WriteByte(byte.Parse(textBox1.Text), byte.Parse(textBox2.Text), byte.Parse(textBox3.Text));
         }
 
-            public void WriteByte(byte data)
+            public void WriteByte(byte data, byte data2, byte data3)
             {
-                byte[] bytes = new byte[] { data };
+                byte[] bytes = new byte[] { data, data2, data3 };
                 Connection.port.Write(bytes, 0, bytes.Length);
             }
 
