@@ -63,14 +63,13 @@ namespace Ceruzafasz
 
         private void button3_Click(object sender, EventArgs e)
         {
-            /*Connection.port.WriteLine("1"+textBox1.Text+"2"+textBox2.Text+"3"+textBox3.Text);
-            Connection.port.WriteLine(textBox1.Text);
-            Connection.port.WriteLine("2");
-            Connection.port.WriteLine(textBox2.Text);
-            Connection.port.WriteLine("3");
-            Connection.port.WriteLine(textBox3.Text);*/
-
-            WriteByte(byte.Parse(textBox1.Text), byte.Parse(textBox2.Text), byte.Parse(textBox3.Text));
+            byte a = byte.Parse(textBox1.Text);
+            byte b = byte.Parse(textBox2.Text);
+            byte c = byte.Parse(textBox3.Text);
+            if (textBox1.Text.Equals("")) a = byte.Parse(label15.Text);
+            if (textBox2.Text.Equals("")) a = byte.Parse(label16.Text);
+            if (textBox3.Text.Equals("")) a = byte.Parse(label17.Text);
+            WriteByte(a,b,c);
         }
 
             public void WriteByte(byte data, byte data2, byte data3)
