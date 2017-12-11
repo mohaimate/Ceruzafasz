@@ -38,16 +38,23 @@ namespace Ceruzafasz
                 label17.Text = line.Substring(line.IndexOf("b")+1);
             } else
             {
-                label1.Text = line.Substring(0, line.IndexOf(".") + 3);
-                label11.Text = line.Substring(line.IndexOf("k") + 1);
+                try {
+                    label1.Text = line.Substring(0, line.IndexOf(".") + 3);
+                    label11.Text = line.Substring(line.IndexOf("k") + 1);
+                } catch (Exception e)
+                {
+                    try 
+                        {
+                        Application.Restart();
+                        Environment.Exit(0);
+                    } catch (Exception f)
+                    {
+                        label20.Text = "Error";
+                    }
+                        
+                }
+                
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //When the button is pressed the code gets executed (----serialPort1.Write("")--- is the call to send a message to Arduino
-            //serialPort1.Write("arduino code goes here");
-            Connection.port.Write(textBox1.Text);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -63,12 +70,12 @@ namespace Ceruzafasz
 
         private void button3_Click(object sender, EventArgs e)
         {
-            byte a = byte.Parse(textBox1.Text);
-            byte b = byte.Parse(textBox2.Text);
-            byte c = byte.Parse(textBox3.Text);
-            if (textBox1.Text.Equals("")) a = byte.Parse(label15.Text);
-            if (textBox2.Text.Equals("")) a = byte.Parse(label16.Text);
-            if (textBox3.Text.Equals("")) a = byte.Parse(label17.Text);
+            byte a = 0;
+            if (textBox1.Text.Equals("")) a = byte.Parse(label15.Text); else a = byte.Parse(textBox1.Text);
+            byte b = 0;
+            if (textBox2.Text.Equals("")) b = byte.Parse(label16.Text); else b = byte.Parse(textBox2.Text);
+            byte c = 0;
+            if (textBox3.Text.Equals("")) c = byte.Parse(label17.Text); else c = byte.Parse(textBox3.Text);
             WriteByte(a,b,c);
         }
 
@@ -78,5 +85,9 @@ namespace Ceruzafasz
                 Connection.port.Write(bytes, 0, bytes.Length);
             }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Connection.port.Write("q");
         }
+    }
     }

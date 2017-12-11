@@ -12,11 +12,8 @@ C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\bin\Debug\Ceruzafasz.exe
 C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\bin\Debug\Ceruzafasz.pdb
 C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.csprojResolveAssemblyReference.cache
 C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.Form1.resources
-C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.Properties.Resources.resources
 C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.csproj.GenerateResource.Cache
 C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.csproj.CoreCompileInputs.cache
-C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.exe
-C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.pdb
 C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\bin\Debug\Ceruzafasz.exe.config
 C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\bin\Debug\Ceruzafasz.exe
 C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\bin\Debug\Ceruzafasz.pdb
@@ -27,3 +24,9 @@ C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.cspr
 C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.csproj.CoreCompileInputs.cache
 C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.exe
 C:\Users\Máté\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\Ceruzafasz.pdb
+C:\Users\István\Desktop\ArduiSzoft.exe.config
+C:\Users\István\Desktop\ArduiSzoft.exe
+C:\Users\István\Desktop\ArduiSzoft.pdb
+C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\ArduiSzoft.Properties.Resources.resources
+C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\ArduiSzoft.exe
+C:\Users\István\Documents\GitHub\Ceruzafasz\Ceruzafasz\obj\Debug\ArduiSzoft.pdb
