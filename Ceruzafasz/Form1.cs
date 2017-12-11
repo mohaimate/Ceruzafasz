@@ -31,8 +31,16 @@ namespace Ceruzafasz
         private void LineReceived(string line)
         {
             string data = line;
-            label1.Text = line.Substring(0, line.IndexOf(".")+3);
-            label11.Text = line.Substring(line.IndexOf("k")+1);
+            if (line.StartsWith("m"))
+            {
+                label15.Text = line.Substring(1, line.IndexOf("n")-1);
+                label16.Text = line.Substring(line.IndexOf("n")+1, line.IndexOf("b") - 1);
+                label17.Text = line.Substring(line.IndexOf("b")+1);
+            } else
+            {
+                label1.Text = line.Substring(0, line.IndexOf(".") + 3);
+                label11.Text = line.Substring(line.IndexOf("k") + 1);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
